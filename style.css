@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 /*this is a stupid comment*/
 
 .topbar {
@@ -27,7 +28,7 @@
 .logger {
 	/* logger is a class that looks like a console window. */
 	color: green;
-	font-family: "Lucida Console";
+	font-family: "Inconsolata";
 	background-color: black;
 	height: 1000%;
 	width: 100%;
