@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 h1 {
     text-align: center;
 	font-size: 100px;
-	padding-top: 10%;
+	padding-top: 10%; 
+    font-family: "Great Vibes";
 }
 
 p, a {
 	text-align: center;
 	font-size: 14;
+        font-family: "Great Vibes";
 }
