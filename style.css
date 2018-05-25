@@ -34,6 +34,7 @@
 	background-color: black;
 	height: 1000%;
 	width: 100%;
+        text-align: right;
 }
 
 .logger::selection{
