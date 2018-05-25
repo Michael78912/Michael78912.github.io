@@ -18,11 +18,13 @@
 	text-decoration: none;
 	text-align: center;
 	font-family: "Arial";
+	overflow-y: hidden;
 }
 
 .topbar a:hover{
 	color: white;
 	background-color: black;
+	
 }
 
 .logger {
@@ -39,14 +41,23 @@
 	background: #ffffff;
 }
 
-body {
-	background-color: #dbdbdd;
+p button {
+    background-color: #ffffff; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+p button::hover {
+	background-color: white;
+	color: black;
 }
 
 h1, h3, p {
 	text-align: center;
 	font-family: "Lucida Fax";
-	color: #2a385e;
 }
 
 p a {
@@ -58,3 +69,31 @@ a img {
 	align: left;
 }
 
+body {
+    text-align: center;
+	background-color: black;
+	color: white;
+}
+
+.selection-bar {
+	height: 33px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: gray;
+
+}
+
+.selection-bar a{
+	padding: 10px;
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.selection-bar a:hover{
+	color: white;
+	background-color: black;
+}
