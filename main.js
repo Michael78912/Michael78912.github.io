@@ -1,4 +1,4 @@
-function getPlatform(){
+function getPlatform () {
     var p = navigator.platform;
     if (p.startsWith('Win')) {
         return "Windows";
@@ -9,7 +9,7 @@ function getPlatform(){
     }
 }
 
-function putPlatformOnButton() {
+function putPlatformOnButton () {
     var msg, errmsg;
     if (getPlatform() == "Windows") {
         msg = "download for Windows"
@@ -24,4 +24,8 @@ function putPlatformOnButton() {
     document.getElementById("platform").innerHTML = msg;
     document.getElementById("errmsg").innerHTML = errmsg;
     
+}
+
+function setDownloadUrl (url, id="download_url") {
+	document.getElementById(id).href = url;
 }
