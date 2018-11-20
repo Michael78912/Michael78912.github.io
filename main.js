@@ -1,31 +1,21 @@
-function getPlatform () {
-    var p = navigator.platform;
-    if (p.startsWith('Win')) {
-        return "Windows";
-    } else if (p.startsWith('Linux')) {
-        return "Linux";
+// all this file does is to choose a random icon to 
+// display as favicon.ico.
+
+function setIcon() {
+    var icon = Math.floor(Math.random()) * 2;
+    var iconName;
+    if (icon === 0) {
+        iconName = 'next.png';
     } else {
-        return "Other";
+        iconName = 'cursor.png';
     }
+    (function() {
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/x-icon';
+        link.rel = 'shortcut icon';
+        link.href = iconName;
+        document.getElementsByTagName('head')[0].appendChild(link);
+    })();
 }
 
-function putPlatformOnButton () {
-    var msg, errmsg;
-    if (getPlatform() == "Windows") {
-        msg = "download for Windows"
-        errmsg = "";
-    } else if (getPlatform() == "Linux") {
-        msg = "download for Linux"
-        errmsg = "";
-    } else {
-        msg = "source code"
-        errmsg = "Sorry, the playable version is not available on your system :(";
-    }
-    document.getElementById("platform").innerHTML = msg;
-    document.getElementById("errmsg").innerHTML = errmsg;
-    
-}
-
-function setDownloadUrl (url, id="download_url") {
-	document.getElementById(id).href = url;
-}
+setIcon()
