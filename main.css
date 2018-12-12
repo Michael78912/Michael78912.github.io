@@ -1,8 +1,40 @@
+/*
+Now It appears you are regarding the CSS.
+WHY? My css is terrible, but it gets the job done.
+Now you must think I'm extremely suspicious for all these comments.
+truth is, I just like writing them when I'm bored of writing code.
+*/
+
 html {
     font-family: "Comic Sans MS", "monospace";
     color: darkgray;
     background-color: #edf1f7;
 }
+
+.selection-bar {
+	height: 38px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+    background-color: black;
+    text-align: center;
+
+}
+
+.selection-bar a{
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.selection-bar a:hover{
+	color: darkgray;
+	background-color: gray;
+}
+
 
 form {
     text-align: center;
@@ -71,11 +103,32 @@ form {
     padding: 20px;
 }
 
+h2 {
+    text-align: center;
+}
+
 .version-stuff span {
     color: black;
     padding: 20px;
 }
 
-/* .description {
-    
-} */
+.song {
+    background-color: darkgray;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 30px;
+}
+i {
+    color: black;
+}
+.song p {
+    color: blue;
+    font-size: 12px;
+}
+
+h1 {
+    text-align: center;
+}
+.song h3 {
+    color: red;
+}
